@@ -66,10 +66,6 @@ function response() {
 }
 
 function success(i){
-    document.getElementById('nums').innerHTML = i
-    if(i === '100'){
-        const audio = new Audio()
-        audio.src = 'http://www.internetke.com/jsEffects/2014101006/mp3/The%20Dawn.mp3'
-        audio.play()
-    }
+    document.getElementById('nums').innerHTML = i + '%'
+    document.getElementById('bar').style.width = i + '%'
 }
